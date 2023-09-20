@@ -4,6 +4,7 @@ CFLAGS := -Wall -Wfatal-errors
 SRCS := 01-sample.c \
 				02-sample.c \
 				exercise-01.c \
+				activity-01.c
     # program_2.c \
     program_3.c
 
