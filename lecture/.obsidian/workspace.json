@@ -18,34 +18,26 @@
                 "source": true
               }
             },
-            "group": "90ac3be2fa7c9fe8"
+            "group": "ab8517770c0b9663"
           }
         ]
       },
       {
-        "id": "2f0df477358a4f87",
+        "id": "324e6e2ee128e363",
         "type": "tabs",
         "children": [
           {
-            "id": "fae6ab8ca6506c98",
+            "id": "b68b225e3db62bb1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "function-pass-by-pointer/lecture.md",
-                "mode": "preview",
-                "source": true
+                "mode": "source",
+                "source": false
               }
             },
-            "group": "90ac3be2fa7c9fe8"
-          },
-          {
-            "id": "1e555e7fb080d9aa",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
+            "group": "ab8517770c0b9663"
           }
         ]
       }
@@ -176,15 +168,25 @@
   },
   "active": "fd2f5cd9fe24fc0d",
   "lastOpenFiles": [
+    "Pasted image 20230919195945.png",
+    "function-pass-by-pointer/lecture.md",
+    "function-pass-by-pointer/sample-code/activity-03.c",
+    "Pasted image 20230919205657.png",
+    "Pasted image 20230919205557.png",
+    "Pasted image 20230919205456.png",
+    "Pasted image 20230919205250.png",
+    "Pasted image 20230919205221.png",
+    "function-pass-by-pointer/sample-code/activity-02.c",
+    "function-pass-by-pointer/sample-code/exercise-02",
+    "function-pass-by-pointer/sample-code/exercise-02.o",
     "function-pass-by-pointer/sample-code/exercise-01",
     "function-pass-by-pointer/sample-code/exercise-01.o",
-    "function-pass-by-pointer/sample-code/02-sample",
-    "function-pass-by-pointer/sample-code/02-sample.o",
-    "function-pass-by-pointer/sample-code/01-sample",
-    "function-pass-by-pointer/sample-code/01-sample.o",
-    "function-pass-by-pointer/sample-code/exercise-01.c",
-    "function-pass-by-pointer/sample-code/02-sample.c",
-    "Pasted image 20230919185216.png",
-    "function-pass-by-pointer/sample-code/01-sample.c"
+    "function-pass-by-pointer/sample-code/activity-01",
+    "function-pass-by-pointer/sample-code/activity-01.o",
+    "function-pass-by-pointer/sample-code/03-sample-complete",
+    "function-pass-by-pointer/sample-code/03-sample-complete.o",
+    "sample-code/exercise-02.c.md",
+    "Pasted image 20230919195751.png",
+    "Pasted image 20230919185216.png"
   ]
 }
