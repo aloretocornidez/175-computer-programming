@@ -1,27 +1,23 @@
 #include <stdio.h>
 
-void fun1(int x, int *y)
+void sum_avg()
 {
-  // Multiply x by the contents of y.
-  x = x + (*y);
 
-  // Multiply the contents of y by 5.
-  *y = 5 * (*y);
-
-  // Set x to the contents of y times x.
-  x = (*y) * x;
 }
 
-int main(void)
-{
-  // Initialize our variables.
-  int x = 2, y = 8;
+int main(void) {
 
-  // Call the function by reference. 
-  fun1(x, &y);
+  double z1, z2, z3, sumz, avgz;
 
-  // Print the values
-  printf("%d\t%d\n", x, y);
+  printf("Enter 3 numbers: ");
+
+  scanf("%lf%lf%lf", &z1, &z2, &z3);
+
+  // call a function here
+  sum_avg();
+
+
+  printf("sum and average are %.2lf,%.2lf", sumz, avgz);
 
   return 0;
 }

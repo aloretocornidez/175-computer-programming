@@ -5,11 +5,9 @@ SRCS := 01-sample.c \
 				02-sample.c \
 				03-sample.c \
 				03-sample-complete.c \
-				exercise-01.c \
 				activity-01.c \
-				activity-02.c
-    # program_2.c \
-    program_3.c
+				exercise-01.c \
+				exercise-02.c \
 
 OBJS := ${SRCS:c=o} 
 PROGS := ${SRCS:.c=}
