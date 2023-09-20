@@ -1,7 +1,7 @@
 # 175-computer-programming
 
 ## File Descriptions
-[Ece Discord](./ece-discord-poster.pdf) is a poster that contains a QR-code to join the University of Arizona's IEEE chapter discord server.
+[Ece Discord](./ece-discord.pdf) is a poster that contains a QR-code to join the University of Arizona's IEEE chapter discord server.
 
 This server contiains many resources that are helpful for ECE students.
 - Student organized communication platform
