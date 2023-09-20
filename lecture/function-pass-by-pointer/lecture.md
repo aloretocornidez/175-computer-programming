@@ -1,7 +1,7 @@
 # Pointers and Functions with Passing by Pointers
 
-Presenter: Alan Manuel Loreto Cornídez | MS in ECE Spring '23 Class: ECE 175 |
-Computer Programming For Engineering Applications
+Presenter: Alan Manuel Loreto Cornídez | MS in ECE Spring '23 
+Class: ECE 175 | Computer Programming For Engineering Applications
 
 ### Lecture Overview
 
