@@ -5,12 +5,67 @@
  * Function Prototypes/Declarations
  *
  */
-void read_fraction(int *p_num, int *p_den);
-int gcd(int x, int y);
-void add_fractions(int n1, int d1, int n2, int d2, int *p_n, int *p_d);
-void multiply_fractions(int n1, int d1, int n2, int d2, int *p_n, int *p_d);
+void read_fraction(int *p_num, int *p_den); // Complete
+int gcd(int x, int y);                      // Completed
+void add_fractions(int n1, int d1, int n2, int d2, int *p_n,
+                   int *p_d); // Completed
+void multiply_fractions(int n1, int d1, int n2, int d2, int *p_n,
+                        int *p_d); // Completed
 void reduce_fraction(int *p_n, int *p_d);
-void print_fractions(int n, int d);
+void print_fractions(int n, int d); // Complete
+
+int main(void) {
+  int n1, d1, n2, d2, n, d;
+
+  char op;
+
+  int *ptrN = &n;
+  int *ptrD = &d;
+
+  // void read_fraction(int *p_num, int *p_den); // Complete
+  read_fraction(&n1, &d1);
+
+  printf("Enter the operator: ");
+
+  scanf("%*c%c", &op);
+
+  // read_fraction(/* complete me */);
+
+  read_fraction(&n2, &d2);
+
+  switch (op) {
+
+  case '+': // call a function here
+    add_fractions(n1, d1, n2, d2, &n, &d);
+    break;
+
+  case '-': // call a function here
+    add_fractions(n1, d1, -n2, d2, &n, &d);
+    break;
+
+  case '*': // call a function here
+
+    multiply_fractions(n1, d1, n2, d2, ptrN, &d);
+    break;
+
+  case '/': // call a function here
+
+    // recall: (n1/d2) / (n2/d2) = (n1/d1) * (d2/n2)
+    multiply_fractions(n1, d1, n2, d2, ptrN, ptrD);
+    break;
+
+  default:
+
+    printf("This is not a valid operator");
+  }
+
+// void reduce_fraction(int *p_n, int *p_d)
+  reduce_fraction(ptrN, &d);
+  print_fractions(n, d);
+  printf("\n");
+
+  return 0;
+}
 
 /*
  *
@@ -46,46 +101,34 @@ void print_fractions(int n, int d) {
     printf("%d/%d", n, d);
 }
 
-int main(void) {
-  int n1, d1, n2, d2, n, d;
+void read_fraction(int *p_num, int *p_den) {
 
-  char op;
+  // Prompt the user for entry
+  printf("Enter the numerator and the denominator of the fraction: ");
 
-  // read_fraction(/* complete me */);
+  // Scan the user input
+  scanf("%d %d", p_num, p_den);
+}
 
-  printf("Enter the operator: ");
+void add_fractions(int n1, int d1, int n2, int d2, int *p_n, int *p_d) {
 
-  scanf("%*c%c", &op);
+  *p_n = n1 * d2 + n2 * d1;
 
-  // read_fraction(/* complete me */);
+  *p_d = d1 * d2;
+}
 
-  switch (op) {
+void multiply_fractions(int n1, int d1, int n2, int d2, int *p_n, int *p_d) {
 
-  case '+': // call a function here
+  *p_n = n1 * n2;
+  *p_d = d1 * d2;
+}
 
-    break;
+void reduce_fraction(int *p_n, int *p_d) {
 
-  case '-': // call a function here
+  int temp;
 
-    break;
+  temp = gcd(*p_n, *p_d);
 
-  case '*': // call a function here
-
-    break;
-
-  case '/': // call a function here
-
-    break;
-
-  default:
-
-    printf("This is not a valid operator");
-  }
-
-  // call a function here to make the answer into a reduced form
-
-  // write your code here to complete the main function (call print_fractions as
-  // needed)
-
-  return 0;
+  *p_n = *p_n / temp;
+  *p_d = *p_d / temp;
 }

@@ -8,7 +8,7 @@ void circle(float r, float a, float c)
   c = 2 * PI * r; // computation of circumference
 }
 
-int main(int argc, char **argv)
+int main(void)
 {
 
   // Create our variables.
