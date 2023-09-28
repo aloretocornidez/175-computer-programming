@@ -12,7 +12,7 @@ Class: ECE 175 | Computer Programming For Engineering Applications
 
 ## Limitations of Reference by Value
 
-[Example](./sample-code/01-sample.c)
+[Example](./sample-code/sample-01.c)
 
 Suppose we have a function `circle` that we want to use to calculate the area
 and circumference of a circle of radius, `r`.
@@ -49,7 +49,7 @@ int main(int argc, char **argv)
 }
 ```
 
-Show `01-sample.c`
+Show `sample-01.c`
 
 # The Concept of Pointers
 
@@ -163,7 +163,8 @@ var1 = *p;
 
 What happens if we run this code?
 
-[Example 2](./sample-code/02-sample.c)
+[Example 2](./sample-code/sample-02.c)
+Show `sample-03.c`
 
 Again, the pointer type and the value or variable must match
 
@@ -220,15 +221,17 @@ int main(void)
 }
 ```
 
-What gets printed if we run this example? Assuming that we know the address of
-each variable given below.
+[Example](./sample-code/exercise-01.c)
+Show `exercise-01.c`
 
-_Note: in practice, memory address is assigned by the operating system (OS)_.
+#### What gets printed if we run this example?
+Assuming that we know the address of each variable given below.
+
+_Note: in practice, the memory address of a variable is assigned by the operating system (OS)_.
 
 The address of `var1` is `0x0110FEC4` and the address of `var2` is `0x0110FEC8`.
 
-The picture below shows what happens at the variable declaration (first 3 lines
-of the code).
+The picture below shows what happens at the variable declaration (first 3 lines of the code).
 
 ![[Pasted image 20230919195945.png]]
 
@@ -270,8 +273,10 @@ int main(void)
 int main(void)
 {
 	int *p;
-	*p = 10;
 
+	// Assigning the value at address p before the address has been assigned. This will result in an error or warning.
+	*p = 10; 
+	
 	return(0);
 }
 ```
@@ -442,12 +447,12 @@ void print_fractions(int n, int d)
 
 ```c
 void read_fraction(int *p_num, int *p_den) {
-	printf("Enter the nominator and the denominator of the fraction:");
+	printf("Enter the numerator and the denominator of the fraction:");
 	scanf("%d%d", /* complete me */ );
 }
 
 //Addition:
-void add fractions(int nl, int dl, int n2, int d2, int *p_n, int *p_d) {
+void add_fractions(int nl, int dl, int n2, int d2, int *p_n, int *p_d) {
 	//write your code here
 }
 //Multiplication:
@@ -456,7 +461,7 @@ void multiply_fractions(int nl, int dl, int n2, int d2, int *p_n, int *p_d) {
 }
 //Reduction: n = n /gcd(n, d), d = d/gcd(n, d).
 // Recall, the function protptype of gcd is int gcd(int x, int y)
-void reduce fraction(int *p_n, int *p_d) {
+void reduce_fraction(int *p_n, int *p_d) {
 	//write your code here
 }
 ```
