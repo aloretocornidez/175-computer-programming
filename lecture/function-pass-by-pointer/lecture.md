@@ -196,6 +196,44 @@ int i;
 scanf("%d", &i);
 ```
 
+
+## Common Errors When Using Pointers
+
+### Forgetting to initialize the pointer
+
+```c
+int main(void)
+{
+	int *p;
+
+	// Assigning the value at address p before the address has been assigned. This will result in an error or warning.
+	*p = 10; 
+	
+	return(0);
+}
+```
+
+### Having a mismatch between variable types and pointer types
+
+```c
+int main(void)
+{
+	float *p;
+
+	int i = 18;
+
+	p = &i;
+
+	*p = 10.5;
+
+	return(0);
+
+}
+```
+
+
+
+
 # Exercises
 
 ## Exercise 1 | An Example Using Pointers
@@ -265,39 +303,6 @@ int main(void)
 
 [Example](./sample-code/activity-01.c)
 
-## Common Errors When Using Pointers
-
-### Forgetting to initialize the pointer
-
-```c
-int main(void)
-{
-	int *p;
-
-	// Assigning the value at address p before the address has been assigned. This will result in an error or warning.
-	*p = 10; 
-	
-	return(0);
-}
-```
-
-### Having a mismatch between variable types and pointer types
-
-```c
-int main(void)
-{
-	float *p;
-
-	int i = 18;
-
-	p = &i;
-
-	*p = 10.5;
-
-	return(0);
-
-}
-```
 
 ## Exercise 2 | What Gets Printed?
 
