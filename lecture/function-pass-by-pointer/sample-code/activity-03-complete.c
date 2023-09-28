@@ -51,41 +51,54 @@ int main(void) {
 
   char op;
 
-  // read_fraction(/* complete me */);
+  // Function Declaration
+  // void read_fraction(int *p_num, int *p_den);
+  // We can use a pointer variable, then assign our pointer to the address of
+  // the variable. We can also just pass the address of the variable as well.
+  read_fraction(&n1, &d1);
 
   printf("Enter the operator: ");
 
   scanf("%*c%c", &op);
 
-  // read_fraction(/* complete me */);
+  read_fraction(&n2, &d2);
 
-  switch (op) {
+  printf("%d %d %d %d", n1, d1, n2, d2);
 
-  case '+': // call a function here
+  // switch (op) {
 
-    break;
-
-  case '-': // call a function here
-
-    break;
-
-  case '*': // call a function here
-
-    break;
-
-  case '/': // call a function here
-
-    break;
-
-  default:
-
-    printf("This is not a valid operator");
-  }
-
+  // case '+': // call a function here
+  //     add_fractions(n1, d1, n2, d2, int *p_n, int *p_d)
+  //
+  //   break;
+  //
+  // case '-': // call a function here
+  //
+  //   break;
+  //
+  // case '*': // call a function here
+  //
+  //   break;
+  //
+  // case '/': // call a function here
+  //
+  //   break;
+  //
+  // default:
+  //
+  //   printf("This is not a valid operator");
+  // }
+  //
   // call a function here to make the answer into a reduced form
 
-  // write your code here to complete the main function (call print_fractions as
-  // needed)
+  // write your code here to complete the main function (call print_fractions
+  // as needed)
 
   return 0;
+}
+
+void read_fraction(int *p_num, int *p_den) {
+  printf("Enter the numerator and the denominator of the fraction: ");
+
+  scanf("%d %d", p_num, p_den);
 }

@@ -17,7 +17,7 @@ int main(void) {
 
   *ptr = *ptr + k + j;
 
-  printf("i = %d, j = %d, k = %d", i, j, *ptr);
+  printf("i = %d, j = %d, k = %d\n", i, j, *ptr);
 
   return (0);
 }

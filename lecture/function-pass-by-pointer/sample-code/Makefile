@@ -1,13 +1,16 @@
 CC=gcc
 CFLAGS := -Wall -Wfatal-errors
 
-SRCS := 01-sample.c \
-				02-sample.c \
-				03-sample.c \
-				03-sample-complete.c \
+SRCS := sample-01.c \
+				sample-02.c \
+				sample-03.c \
+				sample-complete-03.c \
 				activity-01.c \
 				exercise-01.c \
 				exercise-02.c \
+				activity-02.c \
+				activity-03.c \
+				activity-03-complete.c \
 
 OBJS := ${SRCS:c=o} 
 PROGS := ${SRCS:.c=}
@@ -15,7 +18,7 @@ PROGS := ${SRCS:.c=}
 .PHONY: all
 all: ${PROGS}
 
-${PROGS} : % : %.o Makefile
+${PROGS} : % : %.c # %.o Makefile
 	${CC} $< -o $@
 
 clean:
