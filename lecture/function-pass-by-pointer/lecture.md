@@ -327,7 +327,7 @@ int main(void)
 
 [Example](./sample-code/exercise-02.c)
 
-## Activity 2
+## Activity 2 | Function Call using Pointers
 
 1. Write a function sum_avg that has three input parameters with data type of
    double and two output parameters which are the sum and average of the three
