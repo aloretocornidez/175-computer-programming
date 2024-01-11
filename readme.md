@@ -3,7 +3,8 @@
 ## ECE Discord 
 
 Join the ECE discord if you would like to 
-[Ece Discord](./resources/ece-discord.png) 
+
+![Ece Discord](./resources/ece-discord.png) 
 
 
 This server contiains many resources that are helpful for ECE students.
