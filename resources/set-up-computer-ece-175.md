@@ -100,3 +100,17 @@ the correct folder in VS Code's 'workspace'.
   [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/).
   Make sure to install the `Desktop Development with C++` package so that you
   can run your code.
+
+## Linux
+
+I highly recommend using a compiler+text editor combination.
+
+Text editors that I would recommend for Linux users are the following:
+
+- VS Code
+- Configured Vim/NeoVim (This is what I use) (bonus: open source)
+
+Set up your compiler, the Zybooks server runs on a linux container
+and compiles using `gcc` for most test cases.
+
+For Windows users who are interested in using Linux, you can install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). This is a self guided path, however, it is very rewarding.
