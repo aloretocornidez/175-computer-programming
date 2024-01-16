@@ -57,8 +57,9 @@ use your terminal/command line to execute your code as this will be extremely
 beneficial to your understanding of your computer. (Specifically if you are an
 ECE major).
 
-**TLDR: Set up an IDE to get yourself going, and if you are an ECE major or a
-tinkerer, try to set up a Text Editor + Compiler combination.**
+**TLDR: Set up an IDE to get yourself going, use Visual Studio Community or
+Xcode. If you are an ECE major or a tinkerer, try to set up a Text Editor +
+Compiler combination.**
 
 ## MacOS
 
@@ -110,7 +111,11 @@ Text editors that I would recommend for Linux users are the following:
 - VS Code
 - Configured Vim/NeoVim (This is what I use) (bonus: open source)
 
-Set up your compiler, the Zybooks server runs on a linux container
-and compiles using `gcc` for most test cases.
+Set up your compiler, the Zybooks server runs on a linux container and compiles
+using `gcc` for most test cases.
 
-For Windows users who are interested in using Linux, you can install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). This is a self guided path, however, it is very rewarding.
+For Windows users who are interested in using Linux, you can install
+[WSL](https://learn.microsoft.com/en-us/windows/wsl/install). This is a self
+guided path, however, it is very rewarding. After installing WSL, you can use
+the WSL VsCode add-on to seamlessly integrate both of your operating systems or
+choose to work on and individual operating system.
