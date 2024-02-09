@@ -1,30 +1,38 @@
+// Author: Alan Manuel 
+// Purpose: Introduction to loops.
+// Date: 02/09/2024
 
-
-#include <stdbool.h>
 #include <stdio.h>
 
 int main() {
 
-  int myInt = 9;
+  // for( initialization; condition to check; operation after loop)
+  for (int i = 0; i < 10; i++) {
 
-  bool myBool = true;
+    // Be careful to use the iterating variable if you need dynamic conditions.
+    int number = i % 10;
 
-  for (int row = 0; row < 10; row++) {
+    if (number % 3 == 0) {
 
-    for (int column = 0; column < row + 1; column++) {
-
-      printf("* ");
+      printf("i: %d!!!\n", i);
     }
-    printf("\n");
   }
 
+  // While loops can be written to behave exactly like for loops.
+  int k = 0; // initialization
+  while (k < 10) { // condition
+    printf("k: %d!!!\n", k);
+    k++; // operation after code execution.
+  }
 
-
-
-
-
-
-  const int number = 5;
+  /*
+   * If both are the same under the hood, then which one should I use?
+   *
+   * Answer: You want to use for loops when you know how many times that loop
+   * will execute. You want to use while loops if you do not know how many times
+   * you will repeat a section of code.
+   *
+   */
 
   return 0;
 }
