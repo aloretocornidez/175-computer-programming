@@ -16,27 +16,49 @@ int main() {
   // printf("My Number: %.2f\n", myNum);
 
   // open a file so we can work with it
-  FILE *myFile = fopen("./nums.txt", "r");
+  FILE *orthodox = fopen("./nums.txt", "r");
 
   // check if we opened the file correctly
-  if (myFile == NULL) {
+  if (orthodox == NULL) {
     printf("Your file was not opened correctly\n");
     return -1;
   }
 
+  int value;
   // iterate through the entire file while it's open
-  // while (fscanf(myFile, " %d", &value) != EOF) {
-  while (!feof(myFile)) {
+  while (fscanf(orthodox, " %d", &value) != EOF) {
+    // while (!feof(orthodox)) {
 
-    int value;
-
-    fscanf(myFile, " %d", &value);
+    // fscanf(orthodox, " %d", &value);
 
     printf("%d\n", value);
   }
 
   // close the file
-  fclose(myFile);
+  fclose(orthodox);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return 0;
 }
