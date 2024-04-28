@@ -23,6 +23,7 @@ int main()
 
   int *apple = &a;
   int *banana = &b;
+  swap(apple, banana);
 
   printf("      Value of A: %d Value of B: %d\n", *apple, *banana);
   printf("      Address of A: %p Address of B: %p\n", &a, &b);
@@ -77,3 +78,6 @@ int main()
 
   return 0;
 }
+
+
+

@@ -75,7 +75,7 @@ just so happens to correspond to the address of other variables.
 
 In programming contexts, a pointer holds a numerical value.
 
-![[Pasted image 20230919185216.png]]
+![](./attachments/Pasted image 20230919185216.png)
 
 ## Why do we need pointers?
 
@@ -271,7 +271,8 @@ The address of `var1` is `0x0110FEC4` and the address of `var2` is `0x0110FEC8`.
 
 The picture below shows what happens at the variable declaration (first 3 lines of the code).
 
-![[Pasted image 20230919195945.png]]
+
+![](./attachments/Pasted image 20230919195945.png)
 
 ## Activity 1 | What gets printed?
 
@@ -359,9 +360,9 @@ int main(void)
 
 # Create a Common Fraction Calculator
 
-![[Pasted image 20230919205221.png]]
+![](./attachments/Pasted image 20230919205221.png)
 
-![[Pasted image 20230919205250.png]]
+![](./attachments/Pasted image 20230919205250.png)
 
 ### Sample Executions
 
@@ -388,7 +389,7 @@ Enter the numerator and the denominator of the fraction: 2 3
 
 ### Program Structure
 
-![[Pasted image 20230919205456.png]]
+![](./attachments/Pasted image 20230919205456.png)
 
 ### Declaration of Functions
 
@@ -408,7 +409,7 @@ void print_fractions(int n, int d);
 
 ### Program Structure (Including Function Calls in Main)
 
-![[Pasted image 20230919205657.png]]
+![](./attachments/Pasted image 20230919205657.png)
 
 ### `gcd` and `print_fractions` Functions
 
@@ -555,4 +556,4 @@ int main()
 
 You can also follow this QR code: 
 
-![[file.png]]
+![](./attachments/file.png)
